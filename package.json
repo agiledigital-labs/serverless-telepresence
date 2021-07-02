@@ -1,0 +1,15 @@
+{
+  "name": "serverless-telepresence",
+  "version": "1.0.0",
+  "description": "Proxy Lambda to a locally running instance of your Lambda code",
+  "main": "lib/index.js",
+  "repository": "git@github.com:agiledigital-labs/serverless-telepresence.git",
+  "author": "Dave Balmain <dsbalmain@agiledigital.com.au>",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jszip": "^3.6.0",
+    "ngrok": "^4.0.1"
+  }
+}
