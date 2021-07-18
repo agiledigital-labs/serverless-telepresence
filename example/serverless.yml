@@ -5,12 +5,22 @@ provider:
   name: aws
   region: ap-southeast-2
   runtime: nodejs12.x
+  # iamRoleStatements:
+  #   - Effect: Allow
+  #     Action:
+  #       - dynamodb:ListTables
+  #     Resource: "*"
 
 functions:
   hello:
     handler: handler.hello
     events:
       - httpApi: "POST /"
+
+  dyno:
+    handler: handler2.dyno
+    events:
+      - httpApi: "GET /"
 
 plugins:
   localPath: ".."

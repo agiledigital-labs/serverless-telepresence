@@ -3,6 +3,6 @@
 module.exports.hello = async (event, context) => {
   return {
     statusCode: 200,
-    body: JSON.stringify({ greeting: "Hello Haolin!" }),
+    body: JSON.stringify({ greeting: "Hello Dave!" }),
   };
 };
